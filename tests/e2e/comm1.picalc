@@ -1,0 +1,6 @@
+% NAMES: 10
+
+agent Main(a, b) = (^c) (^d) (c'd . d(a) . a'b . 0 | c(a) . a'a . 0);
+
+% test back-and-forth communication of names public to both processes, where the
+% action c'd (b'd after comm) ultimately does not happen because b is restricted

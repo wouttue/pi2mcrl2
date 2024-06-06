@@ -1,0 +1,16 @@
+
+sort PiName = Nat;
+
+sort PiAction = struct
+    free_input_action(channel: PiName, data: PiName) ? is_free_input_action |
+    bound_input_action(channel: PiName, data: PiName) ? is_bound_input_action |
+    free_output_action(channel: PiName, data: PiName) ? is_free_output_action |
+    bound_output_action(channel: PiName, data: PiName) ? is_bound_output_action |
+    tau_action ? is_tau_action;
+
+act pi_action: PiAction;
+
+map pi_names: Set(PiName);
+eqn pi_names = { name': PiName | name' < 10 };
+
+init pi_action(tau_action) . pi_action(free_output_action(0, 1));

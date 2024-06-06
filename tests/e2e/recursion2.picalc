@@ -1,0 +1,3 @@
+% NAMES: 10
+
+agent Main(a, b, c) = a'b . a'c . Main(b, c, a);

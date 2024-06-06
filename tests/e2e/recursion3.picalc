@@ -1,0 +1,6 @@
+% NAMES: 10
+
+% recursion with extrusion
+agent A(a) = (^b) a'b . A(a);
+
+agent Main(e) = (^a) (a(b) . a(c) . a(d) . b'e . 0 | A(a));

@@ -1,0 +1,3 @@
+% NAMES: 10
+
+agent Main = (^a) (((^x) a'x . x(b) . 0) | a(y) . y'a . 0);

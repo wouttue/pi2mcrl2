@@ -1,0 +1,4 @@
+% NAMES: 10
+
+agent Main(c, d) = (^a) (a'c . a'd . 0 | a(b) . a(c) . b'c . a'd . 0);
+% TODO: give formal derivation and explanation for extra (bisimilar) state?

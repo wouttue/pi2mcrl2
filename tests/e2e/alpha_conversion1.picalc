@@ -1,0 +1,4 @@
+% NAMES: 10
+
+% note that c'a is not emitted because it becomes a'b
+agent Main(a) = (^b) (b'a . b'b . 0 | b(c) . b(a) . c'a . 0);

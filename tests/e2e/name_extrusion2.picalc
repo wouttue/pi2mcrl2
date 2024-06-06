@@ -1,0 +1,6 @@
+% NAMES: 10
+
+agent Main(d, e) = (^a) (a(b) . a(c) . d'e . 0 | (^b)(^c) (a(c) . 0 | a'c . a'b . 0));
+
+% NOTE: on mCRL2 version 202307.1 (Release), there is a bug that makes this test
+% not work
